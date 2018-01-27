@@ -35,15 +35,25 @@ group:
       - sensor.iframe2
 ```
 * Customize your newly created sensor in the `customize` section or your `customize.yaml` file:
+
+The scale, height and scale **should** create the right size for the iframes.
+
 ```yaml
   customize:
     sensor.iframe:
       custom_ui_state_card: state-card-iframe
       config:
-        height: 490            > in pixels, height of the iframe (more work needed)
-        width: 108             > in %, width of the iframe (more work needed)
+        height: 490            > in pixels, height of the iframe (**more work needed**)
+        width: 108             > in %, width of the iframe (**more work needed**)
         scale: 1               > scales up or down the content of the iframe (it affects both the height and the width)
-        url: https://www.youtube.com/embed/tgbNymZ7vqY    > url of the resource
+        url: https://www.youtube.com/embed/tgbNymZ7vqY    > url of the resource (**please note that some websites won't allow iframe embeding**)
+    sensor.iframe2:
+      custom_ui_state_card: state-card-iframe
+      config:
+        height: 350
+        width: 108
+        scale: 1
+        url: https://embed.windy.com/embed2.html
  ```
 
 ## Changelog
