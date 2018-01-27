@@ -2,8 +2,6 @@
 
 <img src="https://i.imgur.com/rwFiDcq.gif" height="500">
 
-TO DO: cleanup CSS, add ES5
-
 KNOWN PROBLEMS: CSS is a mess, code is a mess, weird scaling due the the width being give in percents
 
 ## Installation
