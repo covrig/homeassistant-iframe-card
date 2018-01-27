@@ -1,4 +1,4 @@
-# Iframe state card [Home Assistant](https://home-assistant.io)
+# Iframe state card for [Home Assistant](https://home-assistant.io)
 
 TO DO: cleanup CSS, add ES5
 KNOWN PROBLEMS: CSS is a mess, code is a mess, weird scaling due the the width being give in percents
