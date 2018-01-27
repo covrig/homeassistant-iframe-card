@@ -1,0 +1,14 @@
+    sensor.iframe:
+      custom_ui_state_card: state-card-iframe
+      config:
+        height: 350
+        width: 108
+        scale: 1
+        url: https://embed.windy.com/embed2.html
+    sensor.iframe2:
+      custom_ui_state_card: state-card-iframe
+      config:
+        height: 490
+        width: 108
+        scale: 1
+        url: https://www.youtube.com/embed/tgbNymZ7vqY
