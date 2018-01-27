@@ -1,10 +1,10 @@
 # Iframe state card for [Home Assistant](https://home-assistant.io)
 
-TO DO: cleanup CSS, add ES5
-KNOWN PROBLEMS: CSS is a mess, code is a mess, weird scaling due the the width being give in percents
-
 <img src="https://i.imgur.com/rwFiDcq.gif" height="500">
 
+TO DO: cleanup CSS, add ES5
+
+KNOWN PROBLEMS: CSS is a mess, code is a mess, weird scaling due the the width being give in percents
 
 ## Installation
 * Download `/www/custom_ui/state-card-iframe.html` to `<your-hass-configuration-dir>/www/custom_ui/` (create the folder structure if you don't have it - mind the permissions)
