@@ -26,26 +26,26 @@ sensor:
 ```yaml
 group:
   group_iframe:
-    name: ' '            > in this format the iframe will not have a name above
+    name: ' '   > in this format the iframe will not have a name above
     entities:
       - sensor.iframe
   group_iframe2:
-    name: 'Name'         > with a name
+    name: 'Name'   > with a name
     entities:
       - sensor.iframe2
 ```
 * Customize your newly created sensor in the `customize` section or your `customize.yaml` file:
 
-The scale, height and scale **should** create the right size for the iframes.
+The scale, height and scale _should_ create the right size for the iframes.
 
 ```yaml
   customize:
     sensor.iframe:
       custom_ui_state_card: state-card-iframe
       config:
-        height: 490            > in pixels, height of the iframe (**more work needed**)
-        width: 108             > in %, width of the iframe (**more work needed**)
-        scale: 1               > scales up or down the content of the iframe (it affects both the height and the width)
+        height: 490    > in pixels, height of the iframe (more work needed)
+        width: 108     > in %, width of the iframe (more work needed)
+        scale: 1       > scales up or down the content of the iframe (it affects both the height and the width)
         url: https://www.youtube.com/embed/tgbNymZ7vqY    > url of the resource (**please note that some websites won't allow iframe embeding**)
     sensor.iframe2:
       custom_ui_state_card: state-card-iframe
