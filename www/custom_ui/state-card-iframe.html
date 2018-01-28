@@ -1,6 +1,6 @@
 <!--
 https://github.com/covrig/homeassistant-iframe-card
-version: 20180127
+version: 20180128
 -->
 <dom-module id="state-card-iframe">
   <template>
@@ -16,12 +16,23 @@ version: 20180127
         margin-top: -20px;
         margin-bottom: -20px;
       }
+       .overlayiframe {
+        background:transparent; 
+        position:absolute; 
+        width: var(--width); 
+        height:var(--height);
+        top:var(--height);
+        margin-top:var(--negheight);
+        z-index: 5
+      }
       .iframewrap {
         width: var(--widthwrap); 
         height:var(--heightwrap);
         border-bottom-left-radius: 2px;
         border-bottom-right-radius: 2px;
         margin: auto;
+        background:transparent; 
+        position:relative;
       }
       .iframefeed {
         width: var(--width); 
@@ -42,7 +53,9 @@ version: 20180127
         transform-origin: 0 0;
       }
     </style>
+    
     <div class="iframewrap">
+    <div class="overlayiframe" onClick="style.pointerEvents='none'"></div>
     <iframe src='[[stateObj.attributes.config.url]]' class="iframefeed" frameborder="0" align="middle" scrolling="no"></iframe></div>
   </template>
 </dom-module>
@@ -74,6 +87,7 @@ class Iframehass extends Polymer.Element {
       '--scale': config.scale ? config.scale: '1',
       '--heightwrap': (config.height * config.scale)+'px' ? (config.height * config.scale)+'px' : '200px',
       '--widthtwrap': config.width+'%' ? config.width+'%' : '100%',
+      '--negheight': '-'+(config.height)+'px' ? '-'+(config.height)+'px' : '-200px',
     });
   }
 }
