@@ -1,6 +1,6 @@
 <!--
 https://github.com/covrig/homeassistant-iframe-card
-version: 20180128
+version: 20180206
 -->
 <dom-module id="state-card-iframe">
   <template>
@@ -54,8 +54,8 @@ version: 20180128
       }
     </style>
     
-    <div class="iframewrap">
-    <div class="overlayiframe" onClick="style.pointerEvents='none'"></div>
+    <div class="iframewrap" on-tap='cardTapped'>
+    <div class="overlayiframe" onClick="style.pointerEvents='none'" on-tap='cardTapped'></div>
     <iframe src='[[stateObj.attributes.config.url]]' class="iframefeed" frameborder="0" align="middle" scrolling="no"></iframe></div>
   </template>
 </dom-module>
@@ -89,6 +89,9 @@ class Iframehass extends Polymer.Element {
       '--widthtwrap': config.width+'%' ? config.width+'%' : '100%',
       '--negheight': '-'+(config.height)+'px' ? '-'+(config.height)+'px' : '-200px',
     });
+  }
+  cardTapped(ev) {
+      ev.stopPropagation();
   }
 }
 customElements.define(Iframehass.is, Iframehass);
