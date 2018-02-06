@@ -58,6 +58,8 @@ The scale, height and scale _should_ create the right size for the iframes. Ifra
 
 ## Changelog
 ```
+Version 20180206:
+Disabled more info card
 Version 20180129:
 Added functionality to prevent scrolling in the iframe (e.g. for embedded maps). To enable scrolling, click once.
 ```
