@@ -80,7 +80,7 @@ class Iframehass extends Polymer.Element {
 
   ready() {
     super.ready();
-    var config = this.config;
+    var config = this.config || {};
     this.updateStyles({
       '--width': (config.width / config.scale)+'%' ? (config.width / config.scale)+'%' : '100%',
       '--height': config.height+'px' ? config.height+'px' : '200px',
