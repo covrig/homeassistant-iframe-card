@@ -37,6 +37,9 @@ group:
 * Customize your newly created sensor in the `customize` section or your `customize.yaml` file:
 
 The scale, height and scale _should_ create the right size for the iframes. Iframes are a bit finicky to work with and sometimes the content they show don't scale properly.
+```diff
+- All options are mandatory!
+```
 
 ```yaml
   customize:
