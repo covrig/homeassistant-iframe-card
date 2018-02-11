@@ -2,7 +2,7 @@
 
 <img src="https://i.imgur.com/rwFiDcq.gif" height="500">
 
-KNOWN PROBLEMS: CSS is a mess, code is a mess, weird scaling due the the width being give in percents
+KNOWN PROBLEMS: CSS and code could be better arranged, scalling on page zoom/resize could be better.
 
 ## Installation
 * Download `/www/custom_ui/state-card-iframe.html` to `<your-hass-configuration-dir>/www/custom_ui/` (create the folder structure if you don't have it - mind the permissions)
@@ -12,7 +12,7 @@ frontend:
   extra_html_url:
     - /local/custom_ui/state-card-iframe.html
 ```
-* Create one or more sensors, binary_sensor(s), input_text(s) etc. in your `configuration.yaml`. E.g.:
+* Create one or more template sensors, binary_sensor(s), input_text(s) etc. in your `configuration.yaml`. E.g.:
 ```yaml
 sensor:
   - platform: template
