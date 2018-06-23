@@ -58,9 +58,30 @@ The scale, height and scale _should_ create the right size for the iframes. Ifra
         scale: 1
         url: https://embed.windy.com/embed2.html
  ```
+## For [Lovelace](https://gist.github.com/ciotlosm/9508388876edf92c4c1f3579e740fbd5)
+Download `/www/custom_ui/lovelace-iframe.html` to `<your-hass-configuration-dir>/www/custom_ui/` and add the following in your configuration.
+
+```
+frontend:
+  extra_html_url:
+  - /local/lovelace-iframe.html
+```
+
+```
+# Example ui-lovelace.yaml. Create this file as <config>/ui-lovelace.yaml. Title is optional, height is recommended.
+views:
+- name: Iframe
+  cards:
+  - type: "custom:lovelace-iframe"
+    height: 550
+    title: Weather
+    url: https://embed.windy.com/embed2.html?lat=48.234&lon=8.598&zoom=5&level=surface&overlay=radar&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=48.234&detailLon=8.598&metricWind=default&metricTemp=default&radarRange=-1
+```
 
 ## Changelog
 ```
+Version 20180623:
+Added lovelace custom card
 Version 20180206:
 Disabled more info card
 Version 20180129:
