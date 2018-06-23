@@ -59,12 +59,12 @@ The scale, height and scale _should_ create the right size for the iframes. Ifra
         url: https://embed.windy.com/embed2.html
  ```
 ## For [Lovelace](https://gist.github.com/ciotlosm/9508388876edf92c4c1f3579e740fbd5)
-Download `/www/custom_ui/lovelace-iframe.html` to `<your-hass-configuration-dir>/www/custom_ui/` and add the following in your configuration.
+Download `/www/custom_ui/lovelace-iframe.html` to `<your-hass-configuration-dir>/www/custom_ui/` and add the following to your configuration.
 
 ```
 frontend:
   extra_html_url:
-  - /local/lovelace-iframe.html
+  - /local/custom_ui/lovelace-iframe.html
 ```
 
 ```
