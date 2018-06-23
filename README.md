@@ -68,20 +68,24 @@ frontend:
 ```
 
 ```
-# Example ui-lovelace.yaml. Create this file as <config>/ui-lovelace.yaml. Title is optional, height is recommended.
+# Example ui-lovelace.yaml. Create this file as <config>/ui-lovelace.yaml. Height is recommended, everything else is optional.
 views:
 - name: Iframe
   cards:
   - type: "custom:lovelace-iframe"
-    height: 550
-    title: Weather
+    height: 700
+    title: WEATHER
+    title-color: white
+    title-background-color: darkgrey
+    title-font-size: 15px
+    title-font-weight: 500
     url: https://embed.windy.com/embed2.html?lat=48.234&lon=8.598&zoom=5&level=surface&overlay=radar&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=48.234&detailLon=8.598&metricWind=default&metricTemp=default&radarRange=-1
 ```
 
 ## Changelog
 ```
 Version 20180623:
-Added lovelace custom card
+Added Lovelace custom card
 Version 20180206:
 Disabled more info card
 Version 20180129:
