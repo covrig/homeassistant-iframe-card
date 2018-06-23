@@ -79,7 +79,7 @@ views:
     title-background-color: darkgrey
     title-font-size: 15px
     title-font-weight: 500
-    url: https://embed.windy.com/embed2.html?lat=48.234&lon=8.598&zoom=5&level=surface&overlay=radar&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=48.234&detailLon=8.598&metricWind=default&metricTemp=default&radarRange=-1
+    url: https://embed.windy.com/embed2.html?lat=48.234&lon=8.598&zoom=5&level=surface&overlay=radar&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=48.234&detailLon=8.598&metricWind=default&metricTemp=default&radarRange=-12
 ```
 
 ## Changelog
