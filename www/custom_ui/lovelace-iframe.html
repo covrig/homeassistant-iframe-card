@@ -1,6 +1,6 @@
 <!--
 https://github.com/covrig/homeassistant-iframe-card
-version: 20180623
+version: 20180624
 -->
 <script>
 class Iframe extends Polymer.Element {
@@ -42,24 +42,6 @@ class Iframe extends Polymer.Element {
       </ha-card>
     `;
   }
-
-  static get properties() {
-    return {
-      hass: Object,
-      config: {
-        type: Object,
-        observer: '_configChanged'
-      },
-    };
-  }
-
-  _configChanged(config) {
-    if (config.iframe) {
-      this._error = null;
-    } else {
-    }
-  }
 }
-
 customElements.define('lovelace-iframe', Iframe);
 </script>
