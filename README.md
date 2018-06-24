@@ -85,7 +85,7 @@ views:
 
 ## Changelog
 ```
-Version 20180623:
+Version 20180624:
 Added Lovelace custom card
 Version 20180206:
 Disabled more info card
